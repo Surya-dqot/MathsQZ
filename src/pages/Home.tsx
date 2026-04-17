@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Link } from "react-router-dom";
 import { 
-  Brain, Zap, Globe, BarChart3, Target, Sparkles, Download, ChevronRight
+  Brain, Zap, Shield, BarChart3, Target, Sparkles, Download, ChevronRight
 } from "lucide-react";
 
 export default function Home() {
@@ -151,23 +151,23 @@ export default function Home() {
           {/* Box 3 */}
           <div className="bg-[#111827]/50 border border-white/10 rounded-3xl p-8 lg:p-10 relative overflow-hidden group hover:bg-[#111827] transition-colors flex flex-col justify-end">
             <BarChart3 size={48} className="text-[#5588ee] mb-6" />
-            <h3 className="text-2xl font-bold text-white mb-3">Deep Analytics</h3>
-            <p className="text-slate-400 text-lg">Visualize your brain's growth over time with gorgeous interactive charts.</p>
+            <h3 className="text-2xl font-bold text-white mb-3">On-Device Analytics</h3>
+            <p className="text-slate-400 text-lg">Visualize your progress with gorgeous charts. All data is kept 100% local—we track absolutely nothing.</p>
             <div className="absolute right-0 top-10 opacity-20 w-40 h-40 border-8 border-[#5588ee] rounded-full translate-x-1/2 -translate-y-1/2 group-hover:scale-110 transition-transform duration-500"></div>
           </div>
 
           {/* Box 4 */}
           <div className="md:col-span-2 bg-gradient-to-br from-[#111827] to-[#0A0F1C] border border-white/10 rounded-3xl p-8 lg:p-10 relative overflow-hidden group">
-            <Globe size={48} className="text-white mb-6 relative z-10" />
-            <h3 className="text-3xl font-bold text-white mb-3 relative z-10">Global Multiplayer Battles</h3>
-            <p className="text-slate-400 text-lg max-w-lg mb-8 relative z-10">Enter the arena. Face off against players from around the world in synchronous 60-second math blitz matches. Winner takes the MMR.</p>
+            <Shield size={48} className="text-white mb-6 relative z-10" />
+            <h3 className="text-3xl font-bold text-white mb-3 relative z-10">Zero Data Collection</h3>
+            <p className="text-slate-400 text-lg max-w-lg mb-8 relative z-10">Your mental training is entirely your business. MathsQZ operates completely locally. We don't require external servers, we don't store your scores, and we aggressively protect your digital privacy.</p>
             <div className="flex gap-4 items-center relative z-10">
-               <div className="h-12 px-6 bg-white/10 rounded-xl flex items-center justify-center font-bold text-sm border border-white/5">EU: 12.4k online</div>
-               <div className="h-12 px-6 bg-white/10 rounded-xl flex items-center justify-center font-bold text-sm border border-white/5">NA: 8.1k online</div>
+               <div className="h-12 px-6 bg-white/10 rounded-xl flex items-center justify-center font-bold text-sm border border-white/5">100% Offline Capable</div>
+               <div className="h-12 px-6 bg-white/10 rounded-xl flex items-center justify-center font-bold text-sm border border-white/5">No Account Required</div>
             </div>
             {/* Background elements */}
             <div className="absolute right-0 bottom-0 opacity-10 pointer-events-none transition-transform duration-700 group-hover:scale-110 group-hover:-rotate-3">
-               <Globe size={300} className="translate-x-1/4 translate-y-1/4" />
+               <Shield size={300} className="translate-x-1/4 translate-y-1/4" />
             </div>
           </div>
         </div>

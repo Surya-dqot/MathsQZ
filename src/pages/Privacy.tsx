@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { ArrowLeft, ShieldCheck, Database, Lock, Eye, Mail, Info, FileText, Server } from "lucide-react";
+import { ArrowLeft, ShieldCheck, Database, Lock, Eye, Mail, Info } from "lucide-react";
 
 export default function Privacy() {
   return (
@@ -40,71 +40,51 @@ export default function Privacy() {
             <section>
               <h2 className="flex items-center gap-4 text-3xl md:text-4xl font-bold text-white mb-8">
                 <Database className="text-[#5588ee]" size={36} /> 
-                Information We Collect
+                Zero Data Collection
               </h2>
               <p className="text-lg text-slate-400 leading-relaxed mb-6">
-                To provide you with a seamless, personalized, and adaptive brain-training experience, we collect specific types of data. The information we gather depends entirely on how you interface with our Services.
+                MathsQZ is designed with absolute privacy at its core. We strongly believe that your mental training and usage habits are entirely your own business. 
               </p>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-                 <div className="bg-white/5 border border-white/10 p-6 rounded-2xl">
-                    <h3 className="text-xl font-bold text-white mb-2 flex gap-2 items-center"><Info size={20} className="text-[#88eedd]" /> Account Data</h3>
-                    <p className="text-slate-400 text-sm leading-relaxed">When you register, we securely collect your email address, chosen username, password hashes, and age-group demographic strictly for accurate leaderboard placements.</p>
-                 </div>
-                 <div className="bg-white/5 border border-white/10 p-6 rounded-2xl">
-                    <h3 className="text-xl font-bold text-white mb-2 flex gap-2 items-center"><Server size={20} className="text-[#88eedd]" /> Gameplay Metrics</h3>
-                    <p className="text-slate-400 text-sm leading-relaxed">We record match history, reaction times down to the millisecond, accuracy rates, problem-specific struggle areas, and your MMR (Matchmaking Rating).</p>
-                 </div>
-                 <div className="bg-white/5 border border-white/10 p-6 rounded-2xl md:col-span-2">
-                    <h3 className="text-xl font-bold text-white mb-2 flex gap-2 items-center"><FileText size={20} className="text-[#88eedd]" /> Device & Technical Logs</h3>
-                    <p className="text-slate-400 text-sm leading-relaxed">To debug crashes and optimize performance natively, we may gather hardware model specifications, operating system versions, IP addresses (temporarily for matchmaking proximity), and crash analytics through anonymous diagnostic reports.</p>
-                 </div>
+              <div className="bg-white/5 border border-white/10 p-8 rounded-2xl">
+                 <h3 className="text-xl font-bold text-white mb-2 flex gap-2 items-center"><Info size={24} className="text-[#88eedd]" /> Absolute On-Device Processing</h3>
+                 <p className="text-slate-400 text-base leading-relaxed">
+                   We <strong>do not</strong> collect, transmit, or store any personal information, account data, or gameplay metrics on any external servers. Every chart, score, and piece of analytical data you see in the app is generated and securely stored 100% locally on your device.
+                 </p>
               </div>
             </section>
 
             <section>
               <h2 className="flex items-center gap-4 text-3xl md:text-4xl font-bold text-white mb-8">
                 <Eye className="text-[#5588ee]" size={36} /> 
-                How We Use Your Information
+                No External Tracking
               </h2>
               <p className="text-lg text-slate-400 leading-relaxed mb-6">
-                Your data is the fuel that runs the MathsQZ adaptive engine. Here is exactly what we use it for:
+                Because we do not gather any data, we natively use zero remote tracking mechanisms.
               </p>
               <ul className="space-y-4 text-slate-300 text-lg">
-                <li className="flex gap-3"><span className="text-[#88eedd] font-bold">✓</span> <strong>Adaptive Intelligence:</strong> To analyze your specific mathematical weaknesses and tailor the algorithm to challenge you appropriately in future sessions.</li>
-                <li className="flex gap-3"><span className="text-[#88eedd] font-bold">✓</span> <strong>Global Multiplayer:</strong> To find opponents near your skill level (MMR) and geographic location to ensure minimal latency during 60-second blitzes.</li>
-                <li className="flex gap-3"><span className="text-[#88eedd] font-bold">✓</span> <strong>Service Maintenance:</strong> To monitor overall application health, server uptimes, and investigate reported glitches or exploit behaviors on the leaderboards.</li>
-                <li className="flex gap-3"><span className="text-[#88eedd] font-bold">✓</span> <strong>Communication:</strong> To send mandatory technical notices, update logs, security alerts, and to reply to your direct customer service inquiries.</li>
+                <li className="flex gap-3"><span className="text-[#88eedd] font-bold">✓</span> <strong>No Accounts Required:</strong> You never have to sign in or provide an email identifier.</li>
+                <li className="flex gap-3"><span className="text-[#88eedd] font-bold">✓</span> <strong>No Analytics SDKs:</strong> We don't embed invasive third-party telemetry tools that monitor your behavior.</li>
+                <li className="flex gap-3"><span className="text-[#88eedd] font-bold">✓</span> <strong>No Advertising Profiles:</strong> Your interactions cannot be sold or tracked because they never leave your physical phone.</li>
               </ul>
             </section>
 
             <section>
               <h2 className="flex items-center gap-4 text-3xl md:text-4xl font-bold text-white mb-8">
                 <Lock className="text-[#5588ee]" size={36} /> 
-                Data Security
+                No Third-Party Sharing
               </h2>
               <p className="text-lg text-slate-400 leading-relaxed mb-6">
-                We implement industry-grade security measures to maintain the safety of your personal information. Database access is strictly authenticated. All sensitive network requests, including logins and MMR updates, are encrypted via TLS 1.3. 
+                <strong className="text-white">We do not share any data with third parties.</strong> 
                 <br/><br/>
-                While no digital infrastructure can be guaranteed 100% immune to malicious attacks, our zero-trust architecture ensures that even in the unlikely event of a breach, password hashes remain mathematically irreversible and plain text user identities remain obscured.
+                As unequivocally stated in our Google Play Store Data Safety declaration, MathsQZ does not permit user data to be transmitted to other companies or organizations. Since we do not collect the data in the first place, it is physically impossible for us to share it, sell it, or distribute it to advertising networks, data brokers, or external cloud infrastructures.
               </p>
             </section>
 
             <section>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Data Sharing and Third Parties</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">App Data Deletion</h2>
               <p className="text-lg text-slate-400 leading-relaxed">
-                <strong className="text-white">MathsQZ does not sell, trade, or distribute your personal data. Period.</strong> 
-                <br/><br/>
-                We operate on a strictly premium / freemium model and do not rely on ad-tracking revenue. We only share anonymized, aggregated data with hosting cloud providers (e.g., AWS, Vercel) necessary to run the service. These partners are bound by strict DPA (Data Processing Agreements) to maintain absolute confidentiality.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Your Rights & Deletion</h2>
-              <p className="text-lg text-slate-400 leading-relaxed">
-                You retain complete sovereignty over your data. Under GDPR, CCPA, and global privacy standards, you have the right to request a complete export of your gameplay data, to correct inaccuracies, or to execute a "Right to be Forgotten."
-                <br/><br/>
-                You can permanently delete your account and wipe all tracing data directly within the MathsQZ app by navigating to <code className="bg-white/10 px-2 py-1 rounded text-white text-sm">Settings &gt; Account &gt; Danger Zone &gt; Delete Account</code>.
+                Because MathsQZ operates completely locally, you retain complete sovereignty over your localized data. If you wish to wipe any localized scores or history, you can simply uninstall the application or clear the application cache directly via your device's operating system settings.
               </p>
             </section>
 
