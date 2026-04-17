@@ -119,7 +119,7 @@ export default function Privacy() {
                      If you have any questions, concerns, or legal inquiries regarding our privacy practices and DPA.
                   </p>
                   <a href="mailto:privacy@mathsqz.com" className="inline-flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full font-bold hover:scale-105 transition-transform">
-                     privacy@mathsqz.com
+                     support@aditienterprisess.com
                   </a>
                </div>
             </div>
